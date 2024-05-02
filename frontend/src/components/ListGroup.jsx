@@ -34,7 +34,7 @@ const ListGroup = () => {
 
   return (
     <ul className="list-group my-2">
-      {allTodos.map((todo) => (
+      {allTodos?.map((todo) => (
         <ListItem key={todo._id} todo={todo} />
       ))}
     </ul>
